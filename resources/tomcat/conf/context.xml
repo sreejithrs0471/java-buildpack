@@ -17,4 +17,11 @@
   -->
 
 <Context>
+
+    <Resource name="jdbc/WebBill" auth="Container"
+              type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
+              url="jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS =(PROTOCOL = TCP)(HOST = emmdb22-dt-aq-grid.sys.comcast.net)(PORT = 1540))(CONNECT_DATA =(SERVER = dedicated)(SERVICE_NAME = CDVT1Q_bill_1.sys.comcast.net)))"
+              username="TBMS_VOIP" password="CT1Q_tbmsvoip_118C" maxTotal="100" maxIdle="30"
+              maxWaitMillis="10000"/>
+
 </Context>
