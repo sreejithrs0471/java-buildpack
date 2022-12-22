@@ -25,8 +25,19 @@
               maxWaitMillis="10000"/>
     <Resource name="jdbc/WebDisp" auth="Container"
               type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              initialSize="5"
+              maxActive="100"
+              maxIdle="20"
+              minIdle="10"
+              timeBetweenEvictionRunsMillis="34000"
+              minEvictableIdleTimeMillis="55000"
+              validationQuery="SELECT 1 FROM DUAL"
+              validationInterval="34000"
+              testOnBorrow="true"
+              removeAbandoned="true"
+              removeAbandonedTimeout="120"
               url="jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS =(PROTOCOL = TCP)(HOST = emmdb22-dt-aq-grid.sys.comcast.net)(PORT = 1540))(CONNECT_DATA =(SERVER = dedicated)(SERVICE_NAME = CDVT1Q_bill_1.sys.comcast.net)))"
-              username="TBMS_VOIP" password="CT1Q_tbmsvoip_118C" maxTotal="100" maxIdle="30"
-              maxWaitMillis="10000"/>
+              username="TBMS_VOIP" password="CT1Q_tbmsvoip_118C"/>
 
 </Context>
