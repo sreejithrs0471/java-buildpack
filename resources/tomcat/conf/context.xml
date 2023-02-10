@@ -20,8 +20,8 @@
 
     <Resource name="jdbc/WebBill" auth="Container"
               type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
-              url="jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS =(PROTOCOL = TCP)(HOST = emmdb22-dt-aq-grid.sys.comcast.net)(PORT = 1540))(CONNECT_DATA =(SERVER = dedicated)(SERVICE_NAME = CDVT1Q_bill_1.sys.comcast.net)))"
-              username="TBMS_VOIP" password="CT1Q_tbmsvoip_118C" maxTotal="100" maxIdle="30"
+              url="jdbc:oracle:thin:@(DESCRIPTION_LIST=(FAILOVER=ON)(LOAD_BALANCE=OFF)(DESCRIPTION=(ENABLE=BROKEN)(CONNECT_TIMEOUT=30)(TRANSPORT_CONNECT_TIMEOUT=6)(RETRY_COUNT=5)(ADDRESS=(PROTOCOL=TCP)(HOST=emmdb40-po-ap-grid.sys.comcast.net)(PORT=1540))(CONNECT_DATA=(FAILOVER_MODE=(TYPE=select)(METHOD=basic))(SERVICE_NAME=cdvt1p_web_1.sys.comcast.net)(SERVER=DEDICATED)))(DESCRIPTION=(CONNECT_TIMEOUT=30)(TRANSPORT_CONNECT_TIMEOUT=4)(RETRY_COUNT=5)(ADDRESS=(PROTOCOL=TCP)(HOST=emmdb41-ch2-ap-sc.sys.comcast.net)(PORT=1540))(CONNECT_DATA=(FAILOVER_MODE=(TYPE=select)(METHOD=basic))(SERVICE_NAME=cdvt1p_web_1.sys.comcast.net)(SERVER=DEDICATED))))"
+              username="TBMS_VOIP" password="T3l3-V01c3-M.A.1.n.2019" maxTotal="100" maxIdle="30"
               maxWaitMillis="10000"/>
     <Resource name="jdbc/WebDisp" auth="Container"
               type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
@@ -37,6 +37,7 @@
               testOnBorrow="true"
               removeAbandoned="true"
               removeAbandonedTimeout="120"
-             
+              url="jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS =(PROTOCOL = TCP)(HOST = emmdb22-dt-aq-grid.sys.comcast.net)(PORT = 1540))(CONNECT_DATA =(SERVER = dedicated)(SERVICE_NAME = CDVT1Q_bill_1.sys.comcast.net)))"
+              username="TBMS_VOIP" password="CT1Q_tbmsvoip_118C"/>
 
 </Context>
