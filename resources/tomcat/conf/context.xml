@@ -38,6 +38,6 @@
               removeAbandoned="true"
               removeAbandonedTimeout="120"
               url="jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS =(PROTOCOL = TCP)(HOST = emmdb22-dt-aq-grid.sys.comcast.net)(PORT = 1540))(CONNECT_DATA =(SERVER = dedicated)(SERVICE_NAME = CDVT1Q_bill_1.sys.comcast.net)))"
-              username="TBMS_VOIP" password="CT1Q_tbmsvoip_118C"/>
+              username="TBMS_VOIP1" password="CT1Q_tbmsvoip_118C"/>
 
 </Context>
