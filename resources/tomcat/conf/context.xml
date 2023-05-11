@@ -37,7 +37,7 @@
               testOnBorrow="true"
               removeAbandoned="true"
               removeAbandonedTimeout="120"
-              url="jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS =(PROTOCOL = TCP)(HOST = emmdb22-dt-aq-grid.sys.comcast.net)(PORT = 1540))(CONNECT_DATA =(SERVER = dedicated)(SERVICE_NAME = CDVT1Q_bill_1.sys.comcast.net)))"
-              username="TBMS_VOIP" password="CT1Q_tbmsvoip_118C"/>
+              url="jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS =(PROTOCOL = TCP)(HOST = emmdb21-dt-ad-grid.sys.comcast.net)(PORT = 1540))(CONNECT_DATA =(SERVER = dedicated)(SERVICE_NAME = CDVT1D_bill_1.sys.comcast.net)))"
+              username="TBMS_VOIP" password="CT1D-tbmsvoip18c"/>
 
 </Context>
